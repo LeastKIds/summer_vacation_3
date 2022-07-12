@@ -1,11 +1,15 @@
 import React from 'react';
+import Button from './Button'
 
-const Header = () => {
+const Header = (props) => {
     // JSX(Javascript Syntax Extension) code return
+
+    console.log(props)
     return (
-        <div>
-            <div>Kim JinHong</div><div>Hello</div>
-        </div>
+        <header className="header">
+            <h1>{props.title}</h1>
+            <Button text={'hello'}/>
+        </header>
     )
 }
 export  default Header
